@@ -28,3 +28,13 @@ function pause() {
         track.stop();
     });
 }
+
+document.querySelector('#sum').addEventListener('click', function () {
+    if (document.documentElement.webkitRequestFullscreen) {
+        document.documentElement.webkitRequestFullscreen();
+        document.getElementById('sum').style.display = 'none'
+    } else {
+        document.documentElement.mozRequestFullScreen();
+        document.getElementById('sum').style.display = 'none'
+    }
+  });
