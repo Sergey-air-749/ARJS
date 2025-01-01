@@ -15,9 +15,19 @@
     </div>
 
     <button class="button-style" id="sum">Окно в полный экран</button>
-
-    <!-- <button onclick="pause()">stop</button>
-    <button onclick="startup()">start</button> -->
+    
+    <script>
+        document.querySelector('#sum').addEventListener('click', function () {
+          if (document.documentElement.webkitRequestFullscreen) {
+            document.documentElement.webkitRequestFullscreen();
+            document.getElementById('sum').style.display = 'none'
+          }
+          else {
+            document.documentElement.mozRequestFullScreen();
+            document.getElementById('sum').style.display = 'none'
+          }
+        });
+    </script>
 
     <script src="main.js"></script>
 

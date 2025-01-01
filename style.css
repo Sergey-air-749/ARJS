@@ -8,6 +8,8 @@
 
 .camera {
     display: flex;
+    flex-direction: row;
+    width: 100%;
 }
 
 .video {
